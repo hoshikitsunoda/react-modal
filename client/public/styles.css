@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+h5,
+h6 {
+  margin: 0;
+  border-bottom: 1px solid #ecedee;
+}
+
+h5 {
+  padding: 3% 5%;
+  font-size: 2.5rem;
+}
+
+h6 {
+  padding: 6%;
+  font-size: 1.5rem;
+}
+
+.close {
+  position: absolute;
+  bottom: 6%;
+  right: 29%;
+  padding: 2% 3%;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+.close:hover {
+  background-color: #c3c7c7;
+}
+
+.save {
+  position: absolute;
+  bottom: 6%;
+  right: 2.5%;
+  padding: 2%;
+  border-radius: 5px;
+  background-color: #1774d7;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.fa {
+  position: absolute;
+  top: -2.5%;
+  right: 3%;
+  font-size: 10px;
+}
+
+.fa:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.fa-times::before {
+  color: #7f807f;
+  font-size: 20px;
+}
+
+.modal {
+  animation: popup 0.5s;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  70% {
+    transform: scale(1.2);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
